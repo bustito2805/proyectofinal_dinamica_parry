@@ -1,0 +1,264 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+}
+body .headerFlex {
+  display: flex;
+  flex-flow: nowrap;
+  justify-content: start;
+  align-items: center;
+  overflow: hidden;
+}
+body .headerFlex img {
+  width: 180px;
+}
+body .asideFlex h2 {
+  display: flex;
+  justify-content: stretch;
+  align-items: center;
+}
+body iframe {
+  border-radius: 35px;
+  border-color: rgb(61, 4, 61);
+}
+body input {
+  border-radius: 15px;
+  margin: 15px;
+}
+body .border {
+  border: solid 1px rgb(28, 68, 55);
+}
+body .espacios {
+  margin: 5px;
+}
+body .contenedor {
+  display: flex;
+  justify-content: space-around;
+  align-items: stretch;
+  margin: 5px;
+}
+body .areatexto {
+  width: 300px;
+  height: 30vh;
+  margin: 12px;
+  border-radius: 5px;
+}
+body .imagenContacto {
+  width: 110%;
+  background-attachment: fixed;
+  padding: 40px;
+}
+body .imagenServicios {
+  width: 90%;
+  height: 150vh;
+  margin: 33px;
+}
+body .margenLogo {
+  margin: 0%;
+}
+
+.textoJustificado {
+  text-align: justify;
+}
+
+h2 {
+  font-size: larger;
+}
+h2 h3 {
+  margin: 7px;
+  font-size: medium;
+}
+
+.textarea {
+  width: 80%;
+  max-width: 100%;
+  height: 20vh;
+  border-radius: 10px;
+  position: relative;
+  margin: 6px;
+  padding: 10px;
+}
+
+.tituloCentrado {
+  margin: 50px;
+  font-style: italic;
+}
+
+/*TRANSICIONES*/
+.transicion {
+  transition: width 3s;
+}
+
+.transicion:hover {
+  width: 100%;
+}
+
+/*--PSEUDO CLASES*/
+/*selector:pseudoclase { propiedad: valor; } */
+a:hover {
+  font-weight: bold;
+  background-color: rgb(47, 47, 240);
+  color: white;
+  text-decoration: underline;
+}
+
+a:link {
+  text-decoration: none;
+  color: rgb(90, 34, 71);
+}
+
+a:visited {
+  color: #113b0c;
+}
+
+a:active {
+  background-color: rgb(153, 153, 13);
+  color: black;
+}
+
+/*ANIMACIONES*/
+.tituloAnimado {
+  animation-name: titulo;
+  animation-duration: 8s;
+  animation-iteration-count: 3;
+}
+
+@keyframes titulo {
+  /*inicio*/
+  from {
+    transform: translateX(1300px);
+  }
+  /*FINAL*/
+  to {
+    transform: translate(0);
+  }
+}
+/*RESPONSIVE DESINGN*/
+/*Desktop*/
+@media (min-width: 1024px) {
+  P {
+    font-size: large;
+  }
+}
+/*Tablet */
+@media (min-width: 481px) and (max-width: 1023px) {
+  P {
+    font-size: medium;
+  }
+}
+/*Smartphone */
+@media (max-width: 480px) {
+  P {
+    font-size: small;
+  }
+}
+body {
+  width: 100%;
+}
+body header {
+  width: 100%;
+}
+body header h1 {
+  font-style: "Akshar", sans-serif;
+  font-size: 30px;
+}
+body nav {
+  width: 100%;
+}
+body nav div {
+  width: 100%;
+}
+body div {
+  width: 100%;
+}
+body div div {
+  width: 100%;
+}
+body aside {
+  width: 90%;
+}
+body footer {
+  width: 80%;
+}
+
+.card, .card-verde {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
+}
+
+.card-verde {
+  background-color: rgb(127, 141, 136);
+}
+
+.caja-index {
+  color: rgb(78, 72, 158);
+  font-size: small;
+  font-style: italic;
+  justify-content: left;
+}
+
+.caja-blog {
+  color: rgb(133, 93, 18);
+  font-size: large;
+  font-style: italic;
+  justify-content: stretch;
+}
+
+h1 {
+  color: rgb(36, 41, 82);
+}
+
+h2 {
+  color: rgb(3, 3, 3);
+}
+
+h3 {
+  color: rgb(29, 50, 143);
+}
+
+/*VARIABLES RESPONSIVE SCSS*/
+@media (min-width: 1024px) {
+  body {
+    background-color: #0cbaba;
+  }
+  body {
+    background-color: #0cbaba;
+    background-image: linear-gradient(315deg, #479999 0%, #995c97 74%);
+  }
+}
+/*Tablet */
+@media (min-width: 481px) and (max-width: 1023px) {
+  body {
+    background-color: #e9bcb7;
+  }
+  body {
+    background-color: #e9bcb7;
+    background-image: linear-gradient(315deg, #e9bcb7 0%, #29524a 74%);
+  }
+}
+/*Smartphone */
+@media (max-width: 480px) {
+  body {
+    background-color: #3bb78f;
+  }
+  body {
+    background-color: #3bb78f;
+    background-image: linear-gradient(315deg, #39866e 0%, #118350 74%);
+  }
+}
+
+/*# sourceMappingURL=destino.css.map */

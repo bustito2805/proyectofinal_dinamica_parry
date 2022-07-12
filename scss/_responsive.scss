@@ -1,0 +1,27 @@
+/*RESPONSIVE DESINGN*/
+
+/*Desktop*/
+
+@media (min-width: 1024px){
+
+    P  { font-size:large ;
+        }     
+       }
+   
+
+/*Tablet */
+
+@media (min-width: 481px) and (max-width:1023px){ 
+
+    P  { font-size:medium ;
+        }     
+}
+
+
+/*Smartphone */
+
+@media (max-width: 480px){
+
+    P  { font-size:small ;
+        }     
+}

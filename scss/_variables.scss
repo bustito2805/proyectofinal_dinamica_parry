@@ -1,0 +1,107 @@
+
+
+$anchura: 100%;
+$estilofuente: 'Akshar', sans-serif;
+$textosize: 20px;
+
+body{
+    width: $anchura;
+    header {width: $anchura;
+        h1{font-style:$estilofuente;
+           font-size: $textosize +10;
+             }
+        }
+    nav {width: $anchura;
+        div{width: $anchura;}
+    }
+    div {width: $anchura;
+        div{width: $anchura;}
+        }
+    aside {width: $anchura - 10;}
+    footer {width: $anchura - 20;}
+}
+//EXTEND//
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
+}
+
+.card-verde {
+  @extend .card;
+  background-color: rgb(127, 141, 136);
+
+}
+
+//MIXINS//
+@mixin cajas ($color-texto, $tamano-fuente, $estilo-fuente,$orientacion) {
+ color:$color-texto ;
+ font-size: $tamano-fuente;
+ font-style: $estilo-fuente;
+ justify-content: $orientacion;
+  
+}
+.caja-index{
+  @include cajas(rgb(78, 72, 158), small, italic, left)
+}
+
+.caja-blog{
+  @include cajas(rgb(133, 93, 18),large,italic,stretch)
+}
+
+//MAPAS--//
+$colortitulos: (
+ //clave : valor
+h1: rgb(36, 41, 82),
+h2: rgb(3, 3, 3),
+h3: rgb(29, 50, 143)
+
+);
+
+//EACH con MAPAS//
+@each $titulo, $valor in $colortitulos {
+  #{$titulo} {color: $valor;}
+} 
+// aplique color directamente en las etiquetas h(titulos). De acuerdo a gerarquia del titulos es el color//
+
+
+/*VARIABLES RESPONSIVE SCSS*/
+
+@media (min-width: 1024px) {
+    body {
+      background-color:#0cbaba;
+    }
+    body {
+      background-color: #0cbaba;
+      background-image: linear-gradient(315deg, #479999 0%, #995c97 74%);
+    }
+    
+  }
+  /*Tablet */
+    @media (min-width: 481px) and (max-width: 1023px) {
+    body {
+      background-color: #e9bcb7;
+    }
+    body {
+      background-color: #e9bcb7;
+      background-image: linear-gradient(315deg, #e9bcb7 0%, #29524a 74%);
+    }
+    
+  }
+  /*Smartphone */
+    @media (max-width: 480px) {
+    body {
+      background-color: #3bb78f;
+    }
+    body {
+      background-color: #3bb78f;
+      background-image: linear-gradient(315deg, #39866e 0%, #118350 74%);
+    }
+  }
+  
