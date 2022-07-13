@@ -60,8 +60,17 @@ body .imagenServicios {
   height: 150vh;
   margin: 33px;
 }
-body .margenLogo {
-  margin: 0%;
+body .margen {
+  margin: 10px;
+  padding: 10px;
+}
+body .margenCarrusel {
+  margin-left: 40px;
+}
+body .pieServicios {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .textoJustificado {
@@ -167,7 +176,7 @@ body header {
 }
 body header h1 {
   font-style: "Akshar", sans-serif;
-  font-size: 30px;
+  font-size: 32px;
 }
 body nav {
   width: 100%;
@@ -182,10 +191,13 @@ body div div {
   width: 100%;
 }
 body aside {
-  width: 90%;
+  width: 79.5%;
 }
 body footer {
   width: 80%;
+}
+body section {
+  width: 110%;
 }
 
 .card, .card-verde {

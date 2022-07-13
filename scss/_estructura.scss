@@ -59,8 +59,17 @@ body{
     margin:33px;
 
    }
-   .margenLogo{
-    margin: 0%;
+   .margen{
+    margin: 10px;
+    padding: 10px;
    }
-   
+   .margenCarrusel {
+    margin-left: 40px;
+   }
+   .pieServicios {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   }
 }
+

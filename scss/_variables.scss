@@ -8,7 +8,7 @@ body{
     width: $anchura;
     header {width: $anchura;
         h1{font-style:$estilofuente;
-           font-size: $textosize +10;
+           font-size: $textosize +12;
              }
         }
     nav {width: $anchura;
@@ -17,8 +17,9 @@ body{
     div {width: $anchura;
         div{width: $anchura;}
         }
-    aside {width: $anchura - 10;}
+    aside {width: $anchura - 20.5;}
     footer {width: $anchura - 20;}
+    section {width: $anchura +10;}
 }
 //EXTEND//
 .card {
